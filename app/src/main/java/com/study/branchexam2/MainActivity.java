@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mMemoRecyclerView;
     private MemoAdapter mMemoAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
