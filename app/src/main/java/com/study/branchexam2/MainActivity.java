@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             Memo memo = new Memo(title, contents);
+            mMemoAdapter.addMemo(memo);
         }
     };
 }

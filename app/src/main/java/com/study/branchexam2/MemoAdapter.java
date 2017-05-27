@@ -29,6 +29,11 @@ public class MemoAdapter extends RecyclerView.Adapter<MemoAdapter.MemoViewHolder
         holder.mContentsTextView.setText(item.getContents());
     }
 
+    public void addMemo(Memo memo) {
+        mMemos.add(memo);
+        notifyDataSetChanged();
+    }
+
     @Override
     public int getItemCount() {
         return mMemos == null ? 0 : mMemos.size();
