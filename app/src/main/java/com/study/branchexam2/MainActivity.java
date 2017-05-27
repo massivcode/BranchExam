@@ -27,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
         mTitleEditText = (EditText) findViewById(R.id.main_title_et);
         mContentsEditText = (EditText) findViewById(R.id.main_contents_et);
         findViewById(R.id.main_memo_add_btn).setOnClickListener(mOnMemoAddClicked);
+
         mMemoAdapter = new MemoAdapter();
+
         mMemoRecyclerView = (RecyclerView) findViewById(R.id.main_memo_rv);
         mMemoRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         mMemoRecyclerView.setAdapter(mMemoAdapter);
