@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText mTitleEditText;
     private EditText mContentsEditText;
-    private RecyclerView mMemoRecyclerView;
     private MemoAdapter mMemoAdapter;
 
 
@@ -31,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         mMemoAdapter = new MemoAdapter();
 
-        mMemoRecyclerView = (RecyclerView) findViewById(R.id.main_memo_rv);
-        mMemoRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        mMemoRecyclerView.setAdapter(mMemoAdapter);
+        RecyclerView memoRecyclerView = (RecyclerView) findViewById(R.id.main_memo_rv);
+        memoRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        memoRecyclerView.setAdapter(mMemoAdapter);
     }
 
     private View.OnClickListener mOnMemoAddClicked = new View.OnClickListener() {
